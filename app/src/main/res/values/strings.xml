@@ -22,4 +22,13 @@
     <string name="input_phone_number">请输入手机号</string>
     <string name="sign_in">签到中...</string>
 
+    <!--登陆界面-->
+    <string name="login_in">登   录</string>
+    <string name="please_input_code">请输入验证码</string>
+    <string name="get_code">   获取验证码   </string>
+    <string name="auto_sign_in">连接自动签到</string>
+    <string name="equipment">设备</string>
+    <string name="click_equipment">点击连接设备</string>
+    <string name="bottom_text">钱宝移动支付    客服热线（400-918-1815）</string>
+
 </resources>

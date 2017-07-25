@@ -18,6 +18,11 @@
         <item name="android:backgroundDimAmount">0</item>
     </style>
 
+    <!--登陆界面连接自动签到的样式-->
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
 
 
 </resources>

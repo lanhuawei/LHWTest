@@ -489,9 +489,4 @@ public class showDialogUtil {
         dialog.setView(ll);
         dialog.show();
     }
-
-
-
-
-
 }

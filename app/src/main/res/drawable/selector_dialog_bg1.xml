@@ -3,5 +3,4 @@
     android:shape="rectangle">
     <!--弹出对话框样式-->
     <solid android:color="#00000000" />
-
 </shape>
