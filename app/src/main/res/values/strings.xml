@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">LHWTest</string>
+    <string name="app_title">支付</string>
+
+    <!--对话框提示-->
+    <string name="dialog_hint">提示</string>
+    <string name="equipment_failure">设备验证失败</string>
+
+    <!--按钮的确定和取消-->
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+
+    <!--完善资料-->
+    <string name="prompt_perfect_hint">该账号未完善资料，暂不可交易，是否现在完善资料</string>
+    <string name="prompt_perfect">完善信息</string>
+    <string name="binding_equipment">绑定设备</string>
+    <string name="wait">稍后</string>
+
+    <!--设备验证-->
+    <string name="equipment_confirm_failure">设备验证失败</string>
+    <!--输入手机号-->
+    <string name="input_phone_number">请输入手机号</string>
+    <string name="sign_in">签到中...</string>
+
 </resources>

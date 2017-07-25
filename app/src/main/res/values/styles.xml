@@ -8,4 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--弹出对话框样式-->
+    <style name="dialog1" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/selector_dialog_bg1</item>
+        <!-- 背景透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimAmount">0</item>
+    </style>
+
+
+
 </resources>
