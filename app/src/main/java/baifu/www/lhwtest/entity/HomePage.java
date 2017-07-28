@@ -65,7 +65,6 @@ public class HomePage {
          * sort : 1
          * type : smrz
          */
-
         private String name;
         private String img;
         private String sort;
