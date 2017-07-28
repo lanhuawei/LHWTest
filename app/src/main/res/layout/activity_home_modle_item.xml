@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--自定义的布局中的每个子项的布局，例如我的，实名认证-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+        <baifu.www.lhwtest.view.image.SmartImageView
+            android:id="@+id/iv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/home_01"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:textSize="15sp"
+            android:text="@string/real_name_authentication"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc"/>
+    </LinearLayout>
+
+</LinearLayout>

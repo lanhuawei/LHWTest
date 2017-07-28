@@ -87,6 +87,7 @@ public class MyService extends Service {
         myreceiver = new myReceiver();
         super.onCreate();
         startDiscovery();//搜搜蓝牙
+        myHandler();
     }
 
     /**
@@ -308,6 +309,24 @@ public class MyService extends Service {
         }
     }
 
+    /**
+     * IC卡刷卡异常
+     */
+    private void myHandler() {
+        handler = new Handler(){
+            @Override
+            public void handleMessage(Message msg) {
+                super.handleMessage(msg);
+                if(msg.arg1==0){
+                    sendCmd("CreditCardSuccessfullyIC",
+                            "org.great.activity.PaymentActivity");//通知ic卡刷卡成功
+                }if(msg.arg1==1){
+                    sendCmd("CreditCardSuccessfullyICException",
+                            "org.great.activity.PaymentActivity");//刷卡异常
+                }
+            }
+        };
+    }
     /**
      * 开启ic卡pboc 交易
      */
@@ -555,10 +574,12 @@ public class MyService extends Service {
         }
     }
 
-
     @Override
     public void onDestroy() {
         super.onDestroy();
+        destroyDeviceController();
+        unregisterReceiver(discoveryReciever);
+        unregisterReceiver(myreceiver);//移除广播
     }
 
     @Override

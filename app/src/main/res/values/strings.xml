@@ -63,4 +63,13 @@
     <string name="confirm_bind">确认绑定</string>
     <string name="change_phone_number">更换手机号</string>
 
+    <!--主页面-->
+    <string name="mobile_payment">移动支付</string>
+    <string name="quick_in">码上到</string>
+    <string name="quick_payment">快捷支付</string>
+    <string name="card_payment">刷卡支付</string>
+    <string name="sweep_card">扫码支付</string>
+    <!--每个图片中的子项中小布局加载之前-->
+    <string name="real_name_authentication">实名认证</string>
+
 </resources>
