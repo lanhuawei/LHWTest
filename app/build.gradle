@@ -3,6 +3,21 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.3"
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+
     defaultConfig {
         applicationId "baifu.www.lhwtest"
         minSdkVersion 15
@@ -17,8 +32,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+//    packagingOptions {
+//        exclude 'META-INF/NOTICE.txt' // will not include NOTICE file
+//        exclude 'META-INF/LICENSE.txt' // will not include LICENSE file
+//    }
 }
-android{
+android {
     useLibrary('org.apache.http.legacy')
 }
 
@@ -49,6 +68,7 @@ dependencies {
     compile 'org.apache.httpcomponents:httpclient-android:4.3.5.1'
     compile 'com.google.code.gson:gson:1.7.1'
 }
+android { sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } } }
 
 
 

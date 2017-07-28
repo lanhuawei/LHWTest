@@ -177,8 +177,6 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener{
         onBroadcast();
 //        设备连接状态
         DeviceConnState();
-
-
     }
     @Override
     protected int getContentViewId() {

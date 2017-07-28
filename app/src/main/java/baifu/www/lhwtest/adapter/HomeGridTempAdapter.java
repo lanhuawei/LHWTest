@@ -24,7 +24,7 @@ public class HomeGridTempAdapter extends BaseAdapter {
     private Context context;
     private int line_number;
 
-    public HomeGridTempAdapter(List<HomeModel> ls_homemodle, Context ctx) {
+    public HomeGridTempAdapter(Context ctx, List<HomeModel> ls_homemodle) {
         super();
         this.li_mInflater = LayoutInflater.from(context);
         this.ls_homemodel = ls_homemodle;

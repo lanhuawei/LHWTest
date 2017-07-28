@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
     <!--获取验证码按下成灰色按钮时样式-->
     <solid android:color="#777777"/>
     <corners android:radius="5dp"/>
-</selector>
+</shape>

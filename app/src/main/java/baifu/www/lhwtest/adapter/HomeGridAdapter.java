@@ -29,7 +29,7 @@ public class HomeGridAdapter extends BaseAdapter {
     private Context context;
     private int line_number;
 
-    public HomeGridAdapter(List<HomePage.ResultBean> ls_homemodle, Context ctx) {
+    public HomeGridAdapter(Context ctx, List<HomePage.ResultBean> ls_homemodle) {
         this.li_mInflater = LayoutInflater.from(ctx);
         this.ls_homemodle = ls_homemodle;
         this.context = ctx;

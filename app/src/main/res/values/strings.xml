@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">测试支付</string>
+    <string name="app_name">支付</string>
     <string name="app_title">支付</string>
 
     <!--对话框提示-->
@@ -71,5 +71,39 @@
     <string name="sweep_card">扫码支付</string>
     <!--每个图片中的子项中小布局加载之前-->
     <string name="real_name_authentication">实名认证</string>
+    <!--添加银行卡，银行卡实名认证-->
+    <string name="bank_card">银行卡</string>
+    <string name="card_number">卡 号：</string>
+    <string name="card_number_hint">请输入卡号</string>
+    <string name="card_type">类 型：</string>
+    <string name="card_type_hint">请选择银行卡类型</string>
+    <string name="bank">银 行：</string>
+    <string name="bank_hint">请选择银行</string>
+    <string name="location">地 区：</string>
+    <string name="location_hint">请选择地区</string>
+    <string name="bank_branch">支 行：</string>
+    <string name="bank_branch_hint">请选择支行</string>
+    <string name="tel_phone">手 机：</string>
+    <string name="tel_phone_hint">请输入手机号</string>
+    <string name="bank_card_bind">绑定银行卡</string>
+
+    <string name="bank_card_listview_title">选择银行卡</string>
+    <string name="bank_card_listview_add">添加</string>
+    <string name="bank_card_listview_search">点击搜索</string>
+
+    <!--手动添加分行和分行行号-->
+    <string name="add_by_hand">手动添加</string>
+    <string name="add">添加</string>
+    <string name="hint">提示：</string>
+    <string name="important_hint">支行行号可打电话询问开户支行</string>
+    <string name="branch_bank_name">支行名称:</string>
+    <string name="branch_bank_name_hint">请输入支行名！</string>
+    <string name="branch_bank_number">支行行号:</string>
+    <string name="branch_bank_number_hint">请输入支行行号!</string>
+
+    <!--手动添加的支行-->
+    <string name="branch_bank_name_two">支行名称</string>
+
+    <string name="action_settings">Setting</string>
 
 </resources>

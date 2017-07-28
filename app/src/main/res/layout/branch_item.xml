@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--手动添加的支行名称子布局-->
+    <TextView
+        android:id="@+id/zh"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="18sp"
+        android:text="@string/branch_bank_name_two"/>
+
+</LinearLayout>
