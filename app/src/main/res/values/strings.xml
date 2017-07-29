@@ -106,4 +106,9 @@
 
     <string name="action_settings">Setting</string>
 
+    <!--银行卡还款-->
+    <string name="bank_card_view_credit_card_reimbursement">为此银行卡还款</string>
+    <string name="bank_card_view_credit_card_quick_pay">为此银行卡添加快捷支付</string>
+    <string name="bank_card_view_reimbursement">还款</string>
+
 </resources>

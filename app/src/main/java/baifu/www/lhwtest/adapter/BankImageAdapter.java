@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import baifu.www.lhwtest.R;
 import baifu.www.lhwtest.entity.BankCardInfo;
 
 /**
@@ -67,7 +68,7 @@ public class BankImageAdapter extends BaseAdapter {
 //		Button is_quickpay_btn = (Button) view.findViewById(R.id.is_quickpay_btn);
         //ImageView kjbz_iv=(ImageView) view.findViewById(R.id.kjbz_iv);
         TextView jsk_tv=(TextView) convertView.findViewById(R.id.jsk_tv);
-        final BankCardInfo bi = bankCardInfo.get(arg0);
+        final BankCardInfo bi = bankCardInfo.get(position);
 
         //0表示没有快捷支付，1有
         if ("0".equals(bi.getIs_quickpay())) {
@@ -110,6 +111,41 @@ public class BankImageAdapter extends BaseAdapter {
                 context.startActivity(intent);
             }
         });
-        return view;
+        return convertView;
     }
+
+    /** 设置头像 */
+    private void setHead(String bankName) {
+        System.out.println(bankName);
+        if (bankName.equals("招商银行")) {
+            bank_head_iv.setImageResource(R.mipmap.zhaoshang);
+        } else if (bankName.equals("工商银行")) {
+            bank_head_iv.setImageResource(R.mipmap.gongshang);
+        } else if (bankName.equals("建设银行")) {
+            bank_head_iv.setImageResource(R.mipmap.jianshe);
+        } else if (bankName.equals("广发银行")) {
+            bank_head_iv.setImageResource(R.mipmap.guangfa);
+        } else if (bankName.equals("华夏银行")) {
+            bank_head_iv.setImageResource(R.mipmap.huaxia);
+        } else if (bankName.equals("农业银行")) {
+            bank_head_iv.setImageResource(R.mipmap.nongye);
+        } else if (bankName.equals("兴业银行")) {
+            bank_head_iv.setImageResource(R.mipmap.xingye);
+        } else if (bankName.equals("光大银行")) {
+            bank_head_iv.setImageResource(R.mipmap.guangda);
+        } else if (bankName.equals("交通银行")) {
+            bank_head_iv.setImageResource(R.mipmap.jiaotong);
+        } else if (bankName.equals("民生银行")) {
+            bank_head_iv.setImageResource(R.mipmap.minsheng);
+        } else if (bankName.equals("邮政储蓄银行")) {
+            bank_head_iv.setImageResource(R.mipmap.youzheng);
+        } else if (bankName.equals("中信银行")) {
+            bank_head_iv.setImageResource(R.mipmap.zhongxin);
+        } else if (bankName.equals("人民银行")) {
+            bank_head_iv.setImageResource(R.mipmap.renmin);
+        } else {
+            bank_head_iv.setImageResource(R.mipmap.yinlian);
+        }
+    }
+
 }

@@ -13,4 +13,8 @@
 
     <color name="grey_light">#eeeeee</color>
 
+    <color name="blue_dark">#1c78b2</color>
+
+    <color name="line_ll">#008c77</color>
+
 </resources>

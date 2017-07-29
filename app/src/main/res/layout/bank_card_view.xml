@@ -63,7 +63,7 @@
                     android:id="@+id/kjbz_iv"
                     android:layout_width="50dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/kuaijiebiaozhi"
+                    android:src="@mipmap/kuaijiebiaozhi"
                     android:visibility="invisible"/>
                 <TextView
                     android:id="@+id/jsk_tv"
@@ -115,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_weight="1"
-                android:text="为此银行卡添加快捷支付"
+                android:text="@string/bank_card_view_credit_card_quick_pay"
                 android:textColor="#ffffff"
                 android:visibility="invisible" />
 
@@ -124,7 +124,7 @@
                 android:layout_width="60dp"
                 android:layout_height="25dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/quickpaybind"
+                android:background="@mipmap/quickpaybind"
                 android:focusable="false"
                 android:visibility="invisible"/>
         </LinearLayout>
