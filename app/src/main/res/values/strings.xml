@@ -111,4 +111,38 @@
     <string name="bank_card_view_credit_card_quick_pay">为此银行卡添加快捷支付</string>
     <string name="bank_card_view_reimbursement">还款</string>
 
+    <!--选择欲还款银行卡-->
+    <string name="add_bank_card">添加</string>
+
+    <!--申请信用卡-->
+    <string name="apply_credit_card">信用卡申请</string>
+    <string name="chose_bank_of_apply_credit_card">选择申请信用卡银行</string>
+    <string name="xingye_bank">兴业银行</string>
+    <string name="communications_bank">交通银行</string>
+
+    <!--网页布局-->
+    <string name="limit">限额</string>
+    <string name="back_out">后退</string>
+    <string name="move_on">前进</string>
+    <string name="refresh">刷新</string>
+    <string name="stop">暂停</string>
+
+    <!--还款金额-->
+    <string name="repay_money">还款</string>
+    <string name="tail_number">尾号 8416</string>
+    <string name="debit_card">借记卡</string>
+    <string name="out_money">出账金额</string>
+    <string name="out_money_hint">请输入出账金额</string>
+    <string name="int_money">入账金额</string>
+    <string name="int_money_hint">入账金额</string>
+    <string name="int_money_hint_detail">入账金额以实际到账金额为准</string>
+    <string name="Immediate_transaction">立即交易</string>
+
+    <!--更换手机号绑定-->
+    <string name="equipment_number_change">设备号：</string>
+    <string name="choose_equipment_hint">请选择设备</string>
+
+
+
+
 </resources>

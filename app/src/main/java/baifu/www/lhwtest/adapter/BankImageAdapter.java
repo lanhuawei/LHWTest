@@ -14,6 +14,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import baifu.www.lhwtest.R;
+import baifu.www.lhwtest.activity.RepaymentMoneyActivity;
 import baifu.www.lhwtest.entity.BankCardInfo;
 
 /**
@@ -21,7 +22,7 @@ import baifu.www.lhwtest.entity.BankCardInfo;
  * 银行卡布局页面设配器
  */
 
-public class BankImageAdapter extends BaseAdapter {
+public class BankImageAdapter extends BaseAdapter implements View.OnClickListener{
 
     //	private ArrayList<Map<String, String>> mData;
     private Context context;
@@ -37,6 +38,16 @@ public class BankImageAdapter extends BaseAdapter {
     public interface MyClickListener {
         public void clickListener(View v);
     }
+
+    public BankImageAdapter() {
+    }
+
+    public BankImageAdapter(Context context, List<BankCardInfo> bankCardInfo, MyClickListener mListener) {
+        this.context = context;
+        this.bankCardInfo = bankCardInfo;
+        this.mListener = mListener;
+    }
+
     @Override
     public int getCount() {
         return bankCardInfo.size();
@@ -148,4 +159,9 @@ public class BankImageAdapter extends BaseAdapter {
         }
     }
 
+    @Override
+    public void onClick(View view) {
+        mListener.clickListener(view);
+
+    }
 }

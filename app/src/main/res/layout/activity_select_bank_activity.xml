@@ -28,7 +28,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:textSize="20sp"
-            android:text="银行卡"
+            android:text="@string/bank_card"
             android:textColor="#ffffff" />
 
         <TextView
@@ -39,7 +39,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"
             android:textSize="20sp"
-            android:text="添加"
+            android:text="@string/add_bank_card"
             android:textColor="#ffffff" />
 
     </RelativeLayout>

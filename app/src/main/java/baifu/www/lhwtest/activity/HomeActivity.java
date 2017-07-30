@@ -169,9 +169,9 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener{
                         break;
                     case "cx":// 查询
                     case "查询":
-                        if (!MyApplication.getInstance().isDeviceConnState()) {
+                        if (!BaseApplication.getInstance().isDeviceConnState()) {
                             if (judgePerfectInformation()) {
-                                Intent queryIntent = new Intent(HomeNewActivity.this, QueryTransactionActivity.class);
+                                Intent queryIntent = new Intent(HomeActivity.this, QueryTransactionActivity.class);
                                 // Intent queryIntent = new
                                 // Intent(HomeNewActivity.this,
                                 // PayQueryActivity.class);
@@ -182,7 +182,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener{
                                 deviceRegister(a);
                             }
                         } else {
-                            Intent queryIntent = new Intent(HomeNewActivity.this, QueryTransactionActivity.class);
+                            Intent queryIntent = new Intent(HomeActivity.this, QueryTransactionActivity.class);
                             // Intent queryIntent = new Intent(HomeNewActivity.this,
                             // PayQueryActivity.class);
                             startActivity(queryIntent);
