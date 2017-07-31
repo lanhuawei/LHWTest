@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--查询页面设备按钮被选中的背景-->
+    <solid android:color="@color/white_drak"/>
+    <corners android:topRightRadius="15dip" android:bottomRightRadius="15dip"/>
+</selector>

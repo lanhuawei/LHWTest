@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--查询页面点击RadioButton设备背景-->
+    <item android:state_checked="true" android:drawable="@drawable/rb_bg_02t"></item>
+    <item android:state_checked="false" android:drawable="@drawable/rb_bg_02f"></item>
+</selector>

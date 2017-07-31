@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--扫码背景check形状-->
+    <solid android:color="@color/white_drak"/>
+    <corners android:topLeftRadius="15dip" android:bottomLeftRadius="15dip"/>
+</shape>
